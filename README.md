@@ -7,7 +7,9 @@ The purpose of this repository is to test how nodejs server processes multiple r
 
 Setup:  Nodejs web server. Single get method that accepts 2 parameters test id and client id. It returns object with passed client id, passed test id, request id and array of generated 100, 000 objects. 
 
-Jasmine unit tests: 3 spec runners: 
+Jasmine unit tests:
+
+3 spec runners: 
 
 unitTest1/specRunner.js,
 
