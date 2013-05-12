@@ -1,5 +1,5 @@
 var caller = require('../../lib/caller.js');
-describe("Asynchronous Methods'", function(){
+describe("Server spec 2", function(){
 
     beforeEach(function(){
     });
@@ -13,10 +13,13 @@ describe("Asynchronous Methods'", function(){
         });
         waitsFor(function() {
             return ret;
-        },  1700);
+        },  3200);
 
 		runs(function(){
              expect(ret.clientId).toBe('2');
+             console.log('request id: ' + ret.count);
+             expect(ret.testId).toBe('1');
+             expect(ret.records.length).toBe(100000);
         });
 	});
 	it("Test 2 Expect response to return array of 100,000 records, test id to match response testId and client id to match response clientId ", function(){
@@ -29,13 +32,14 @@ describe("Asynchronous Methods'", function(){
         });
         waitsFor(function() {
             return ret;
-        },  1700);
+        },  3200);
 
 		runs(function(){
              expect(ret.clientId).toBe('2');
              console.log('request id: ' + ret.count);
              expect(ret.count).not.toEqual(1);
              expect(ret.testId).toBe('2');
+             expect(ret.records.length).toBe(100000);
         });
 	});
 	it("Test 3 Expect response to return array of 100,000 records, test id to match response testId and client id to match response clientId ", function(){
@@ -48,13 +52,14 @@ describe("Asynchronous Methods'", function(){
         });
         waitsFor(function() {
             return ret;
-        },  1700);
+        },  3200);
 
 		runs(function(){
              expect(ret.clientId).toBe('2');
              console.log('request id: ' + ret.count);
              expect(ret.count).not.toEqual(1);
              expect(ret.testId).toBe('3');
+             expect(ret.records.length).toBe(100000);
         });
 	});
 	it("Test 4 Expect response to return array of 100,000 records, test id to match response testId and client id to match response clientId ", function(){
@@ -67,13 +72,14 @@ describe("Asynchronous Methods'", function(){
         });
         waitsFor(function() {
             return ret;
-        },  1700);
+        },  3200);
 
 		runs(function(){
              expect(ret.clientId).toBe('2');
              console.log('request id: ' + ret.count);
              expect(ret.count).not.toEqual(1);
              expect(ret.testId).toBe('4');
+             expect(ret.records.length).toBe(100000);
         });
 	});
 	it("Test 5 Expect response to return array of 100,000 records, test id to match response testId and client id to match response clientId ", function(){
@@ -86,13 +92,14 @@ describe("Asynchronous Methods'", function(){
         });
         waitsFor(function() {
             return ret;
-        },  1700);
+        },  3200);
 
 		runs(function(){
              expect(ret.clientId).toBe('2');
              console.log('request id: ' + ret.count);
              expect(ret.count).not.toEqual(1);
              expect(ret.testId).toBe('5');
+             expect(ret.records.length).toBe(100000);
         });
 	});
 	it("Test 6 Expect response to return array of 100,000 records, test id to match response testId and client id to match response clientId ", function(){
@@ -105,13 +112,14 @@ describe("Asynchronous Methods'", function(){
         });
         waitsFor(function() {
             return ret;
-        },  1700);
+        },  3200);
 
 		runs(function(){
              expect(ret.clientId).toBe('2');
              console.log('request id: ' + ret.count);
              expect(ret.count).not.toEqual(1);
              expect(ret.testId).toBe('6');
+             expect(ret.records.length).toBe(100000);
         });
 	});
 	it("Test 7 Expect response to return array of 100,000 records, test id to match response testId and client id to match response clientId ", function(){
@@ -124,13 +132,14 @@ describe("Asynchronous Methods'", function(){
         });
         waitsFor(function() {
             return ret;
-        },  1700);
+        },  3200);
 
 		runs(function(){
              expect(ret.clientId).toBe('2');
              console.log('request id: ' + ret.count);
              expect(ret.count).not.toEqual(1);
              expect(ret.testId).toBe('7');
+             expect(ret.records.length).toBe(100000);
         });
 	});
 	it("Test 8 Expect response to return array of 100,000 records, test id to match response testId and client id to match response clientId ", function(){
@@ -143,13 +152,14 @@ describe("Asynchronous Methods'", function(){
         });
         waitsFor(function() {
             return ret;
-        },  1700);
+        },  3200);
 
 		runs(function(){
              expect(ret.clientId).toBe('2');
              console.log('request id: ' + ret.count);
              expect(ret.count).not.toEqual(1);
              expect(ret.testId).toBe('8');
+             expect(ret.records.length).toBe(100000);
         });
 	});
 	it("Test 9 Expect response to return array of 100,000 records, test id to match response testId and client id to match response clientId ", function(){
@@ -162,13 +172,14 @@ describe("Asynchronous Methods'", function(){
         });
         waitsFor(function() {
             return ret;
-        },  1700);
+        },  3200);
 
 		runs(function(){
              expect(ret.clientId).toBe('2');
              console.log('request id: ' + ret.count);
              expect(ret.count).not.toEqual(1);
              expect(ret.testId).toBe('9');
+             expect(ret.records.length).toBe(100000);
         });
 	});
 	it("Test 10 Expect response to return array of 100,000 records, test id to match response testId and client id to match response clientId ", function(){
@@ -181,13 +192,14 @@ describe("Asynchronous Methods'", function(){
         });
         waitsFor(function() {
             return ret;
-        },  1700);
+        },  3200);
 
 		runs(function(){
              expect(ret.clientId).toBe('2');
              console.log('request id: ' + ret.count);
              expect(ret.count).not.toEqual(1);
              expect(ret.testId).toBe('10');
+             expect(ret.records.length).toBe(100000);
         });
 	});
 	it("Test 11 Expect response to return array of 100,000 records, test id to match response testId and client id to match response clientId ", function(){
@@ -200,13 +212,14 @@ describe("Asynchronous Methods'", function(){
         });
         waitsFor(function() {
             return ret;
-        },  1700);
+        },  3200);
 
 		runs(function(){
              expect(ret.clientId).toBe('2');
              console.log('request id: ' + ret.count);
              expect(ret.count).not.toEqual(1);
              expect(ret.testId).toBe('11');
+             expect(ret.records.length).toBe(100000);
         });
 	});
 	it("Test 12 Expect response to return array of 100,000 records, test id to match response testId and client id to match response clientId ", function(){
@@ -219,13 +232,14 @@ describe("Asynchronous Methods'", function(){
         });
         waitsFor(function() {
             return ret;
-        },  1700);
+        },  3200);
 
 		runs(function(){
              expect(ret.clientId).toBe('2');
              console.log('request id: ' + ret.count);
              expect(ret.count).not.toEqual(1);
              expect(ret.testId).toBe('12');
+             expect(ret.records.length).toBe(100000);
         });
 	});
 	it("Test 13 Expect response to return array of 100,000 records, test id to match response testId and client id to match response clientId ", function(){
@@ -238,13 +252,14 @@ describe("Asynchronous Methods'", function(){
         });
         waitsFor(function() {
             return ret;
-        },  1700);
+        },  3200);
 
 		runs(function(){
              expect(ret.clientId).toBe('2');
              console.log('request id: ' + ret.count);
              expect(ret.count).not.toEqual(1);
              expect(ret.testId).toBe('13');
+             expect(ret.records.length).toBe(100000);
         });
 	});
 	it("Test 14 Expect response to return array of 100,000 records, test id to match response testId and client id to match response clientId ", function(){
@@ -257,13 +272,14 @@ describe("Asynchronous Methods'", function(){
         });
         waitsFor(function() {
             return ret;
-        },  1700);
+        },  3200);
 
 		runs(function(){
              expect(ret.clientId).toBe('2');
              console.log('request id: ' + ret.count);
              expect(ret.count).not.toEqual(1);
              expect(ret.testId).toBe('14');
+             expect(ret.records.length).toBe(100000);
         });
 	});
 	it("Test 15 Expect response to return array of 100,000 records, test id to match response testId and client id to match response clientId ", function(){
@@ -276,13 +292,14 @@ describe("Asynchronous Methods'", function(){
         });
         waitsFor(function() {
             return ret;
-        },  1700);
+        },  3200);
 
 		runs(function(){
              expect(ret.clientId).toBe('2');
              console.log('request id: ' + ret.count);
              expect(ret.count).not.toEqual(1);
              expect(ret.testId).toBe('15');
+             expect(ret.records.length).toBe(100000);
         });
 	});
 	it("Test 16 Expect response to return array of 100,000 records, test id to match response testId and client id to match response clientId ", function(){
@@ -295,13 +312,14 @@ describe("Asynchronous Methods'", function(){
         });
         waitsFor(function() {
             return ret;
-        },  1700);
+        },  3200);
 
 		runs(function(){
              expect(ret.clientId).toBe('2');
              console.log('request id: ' + ret.count);
              expect(ret.count).not.toEqual(1);
              expect(ret.testId).toBe('16');
+             expect(ret.records.length).toBe(100000);
         });
 	});
 	it("Test 17 Expect response to return array of 100,000 records, test id to match response testId and client id to match response clientId ", function(){
@@ -314,13 +332,14 @@ describe("Asynchronous Methods'", function(){
         });
         waitsFor(function() {
             return ret;
-        },  1700);
+        },  3200);
 
 		runs(function(){
              expect(ret.clientId).toBe('2');
              console.log('request id: ' + ret.count);
              expect(ret.count).not.toEqual(1);
              expect(ret.testId).toBe('17');
+             expect(ret.records.length).toBe(100000);
         });
 	});
 	it("Test 18 Expect response to return array of 100,000 records, test id to match response testId and client id to match response clientId ", function(){
@@ -333,12 +352,13 @@ describe("Asynchronous Methods'", function(){
         });
         waitsFor(function() {
             return ret;
-        },  1700);
+        },  3200);
 		runs(function(){
              expect(ret.clientId).toBe('2');
              console.log('request id: ' + ret.count);
              expect(ret.count).not.toEqual(1);
              expect(ret.testId).toBe('18');
+             expect(ret.records.length).toBe(100000);
         });
 	});
 	it("Test 19 Expect response to return array of 100,000 records, test id to match response testId and client id to match response clientId ", function(){
@@ -351,12 +371,13 @@ describe("Asynchronous Methods'", function(){
 
         waitsFor(function() {
             return ret;
-        },  1700);
+        },  3200);
 		runs(function(){
              expect(ret.clientId).toBe('2');
              console.log('request id: ' + ret.count);
              expect(ret.count).not.toEqual(1);
              expect(ret.testId).toBe('19');
+             expect(ret.records.length).toBe(100000);
         });
 	});
 	it("Test 20 Expect response to return array of 100,000 records, test id to match response testId and client id to match response clientId ", function(){
@@ -369,13 +390,14 @@ describe("Asynchronous Methods'", function(){
         });
         waitsFor(function() {
             return ret;
-        },  1700);
+        },  3200);
 
 		runs(function(){
              expect(ret.clientId).toBe('2');
              console.log('request id: ' + ret.count);
              expect(ret.count).not.toEqual(1);
              expect(ret.testId).toBe('20');
+             expect(ret.records.length).toBe(100000);
         });
 	});
 
