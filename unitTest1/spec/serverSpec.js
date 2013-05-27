@@ -9,17 +9,16 @@ describe("Server spec 1", function(){
 		var ret;
 		runs(function() {
 			caller.get(1, 1, function(err, respose){
-
 				ret = respose;
 			});
         });
         waitsFor(function() {
             return ret;
-        },  3200);
+        },  7000);
 		runs(function(){
              expect(ret.clientId).toBe('1');
              expect(ret.testId).toBe('1');
-             console.log('request id: ' + ret.count);
+             console.log('test id: ' + ret.testId);
              expect(ret.records.length).toBe(100000);
         });
 	});
@@ -32,12 +31,11 @@ describe("Server spec 1", function(){
         });
         waitsFor(function() {
             return ret;
-        },  3200);
+        },  7000);
 
 		runs(function(){
              expect(ret.clientId).toBe('1');
-             console.log('request id: ' + ret.count);
-             expect(ret.count).not.toEqual(1);
+             console.log('test id: ' + ret.testId);
              expect(ret.testId).toBe('2');
              expect(ret.records.length).toBe(100000);
         });
@@ -52,12 +50,11 @@ describe("Server spec 1", function(){
         });
         waitsFor(function() {
             return ret;
-        },  3200);
+        },  7000);
 
 		runs(function(){
              expect(ret.clientId).toBe('1');
-             console.log('request id: ' + ret.count);
-             expect(ret.count).not.toEqual(1);
+             console.log('test id: ' + ret.testId);
              expect(ret.testId).toBe('3');
              expect(ret.records.length).toBe(100000);
         });
@@ -72,12 +69,11 @@ describe("Server spec 1", function(){
         });
         waitsFor(function() {
             return ret;
-        },  3200);
+        },  7000);
 
 		runs(function(){
              expect(ret.clientId).toBe('1');
-             console.log('request id: ' + ret.count);
-             expect(ret.count).not.toEqual(1);
+             console.log('test id: ' + ret.testId);
              expect(ret.testId).toBe('4');
              expect(ret.records.length).toBe(100000);
         });
@@ -92,12 +88,11 @@ describe("Server spec 1", function(){
         });
         waitsFor(function() {
             return ret;
-        },  3200);
+        },  7000);
 
 		runs(function(){
              expect(ret.clientId).toBe('1');
-             console.log('request id: ' + ret.count);
-             expect(ret.count).not.toEqual(1);
+             console.log('test id: ' + ret.testId);
              expect(ret.testId).toBe('5');
              expect(ret.records.length).toBe(100000);
         });
@@ -112,12 +107,11 @@ describe("Server spec 1", function(){
         });
         waitsFor(function() {
             return ret;
-        },  3200);
+        },  7000);
 
 		runs(function(){
              expect(ret.clientId).toBe('1');
-             console.log('request id: ' + ret.count);
-             expect(ret.count).not.toEqual(1);
+             console.log('test id: ' + ret.testId);
              expect(ret.testId).toBe('6');
              expect(ret.records.length).toBe(100000);
         });
@@ -132,12 +126,11 @@ describe("Server spec 1", function(){
         });
         waitsFor(function() {
             return ret;
-        },  3200);
+        },  7000);
 
 		runs(function(){
              expect(ret.clientId).toBe('1');
-             console.log('request id: ' + ret.count);
-             expect(ret.count).not.toEqual(1);
+             console.log('test id: ' + ret.testId);
              expect(ret.testId).toBe('7');
              expect(ret.records.length).toBe(100000);
         });
@@ -152,12 +145,11 @@ describe("Server spec 1", function(){
         });
         waitsFor(function() {
             return ret;
-        },  3200);
+        },  7000);
 
 		runs(function(){
              expect(ret.clientId).toBe('1');
-             console.log('request id: ' + ret.count);
-             expect(ret.count).not.toEqual(1);
+             console.log('test id: ' + ret.testId);
              expect(ret.testId).toBe('8');
              expect(ret.records.length).toBe(100000);
         });
@@ -172,12 +164,11 @@ describe("Server spec 1", function(){
         });
         waitsFor(function() {
             return ret;
-        },  3200);
+        },  7000);
 
 		runs(function(){
              expect(ret.clientId).toBe('1');
-             console.log('request id: ' + ret.count);
-             expect(ret.count).not.toEqual(1);
+             console.log('test id: ' + ret.testId);
              expect(ret.testId).toBe('9');
              expect(ret.records.length).toBe(100000);
         });
@@ -192,12 +183,11 @@ describe("Server spec 1", function(){
         });
         waitsFor(function() {
             return ret;
-        },  3200);
+        },  7000);
 
 		runs(function(){
              expect(ret.clientId).toBe('1');
-             console.log('request id: ' + ret.count);
-             expect(ret.count).not.toEqual(1);
+             console.log('test id: ' + ret.testId);
              expect(ret.testId).toBe('10');
              expect(ret.records.length).toBe(100000);
         });
@@ -212,12 +202,11 @@ describe("Server spec 1", function(){
         });
         waitsFor(function() {
             return ret;
-        },  3200);
+        },  7000);
 
 		runs(function(){
              expect(ret.clientId).toBe('1');
-             console.log('request id: ' + ret.count);
-             expect(ret.count).not.toEqual(1);
+             console.log('test id: ' + ret.testId);
              expect(ret.testId).toBe('11');
              expect(ret.records.length).toBe(100000);
         });
@@ -232,12 +221,11 @@ describe("Server spec 1", function(){
         });
         waitsFor(function() {
             return ret;
-        },  3200);
+        },  7000);
 
 		runs(function(){
              expect(ret.clientId).toBe('1');
-             console.log('request id: ' + ret.count);
-             expect(ret.count).not.toEqual(1);
+             console.log('test id: ' + ret.testId);
              expect(ret.testId).toBe('12');
              expect(ret.records.length).toBe(100000);
         });
@@ -252,12 +240,11 @@ describe("Server spec 1", function(){
         });
         waitsFor(function() {
             return ret;
-        },  3200);
+        },  7000);
 
 		runs(function(){
              expect(ret.clientId).toBe('1');
-             console.log('request id: ' + ret.count);
-             expect(ret.count).not.toEqual(1);
+             console.log('test id: ' + ret.testId);
              expect(ret.testId).toBe('13');
              expect(ret.records.length).toBe(100000);
         });
@@ -272,12 +259,11 @@ describe("Server spec 1", function(){
         });
         waitsFor(function() {
             return ret;
-        },  3200);
+        },  7000);
 
 		runs(function(){
              expect(ret.clientId).toBe('1');
-             console.log('request id: ' + ret.count);
-             expect(ret.count).not.toEqual(1);
+             console.log('test id: ' + ret.testId);
              expect(ret.testId).toBe('14');
              expect(ret.records.length).toBe(100000);
         });
@@ -292,12 +278,11 @@ describe("Server spec 1", function(){
         });
         waitsFor(function() {
             return ret;
-        },  3200);
+        },  7000);
 
 		runs(function(){
              expect(ret.clientId).toBe('1');
-             console.log('request id: ' + ret.count);
-             expect(ret.count).not.toEqual(1);
+             console.log('test id: ' + ret.testId);
              expect(ret.testId).toBe('15');
              expect(ret.records.length).toBe(100000);
         });
@@ -312,12 +297,11 @@ describe("Server spec 1", function(){
         });
         waitsFor(function() {
             return ret;
-        },  3200);
+        },  7000);
 
 		runs(function(){
              expect(ret.clientId).toBe('1');
-             console.log('request id: ' + ret.count);
-             expect(ret.count).not.toEqual(1);
+             console.log('test id: ' + ret.testId);
              expect(ret.testId).toBe('16');
              expect(ret.records.length).toBe(100000);
         });
@@ -332,12 +316,11 @@ describe("Server spec 1", function(){
         });
         waitsFor(function() {
             return ret;
-        },  3200);
+        },  7000);
 
 		runs(function(){
              expect(ret.clientId).toBe('1');
-             console.log('request id: ' + ret.count);
-             expect(ret.count).not.toEqual(1);
+             console.log('test id: ' + ret.testId);
              expect(ret.testId).toBe('17');
              expect(ret.records.length).toBe(100000);
         });
@@ -352,12 +335,11 @@ describe("Server spec 1", function(){
         });
         waitsFor(function() {
             return ret;
-        },  3200);
+        },  7000);
 
 		runs(function(){
              expect(ret.clientId).toBe('1');
-             console.log('request id: ' + ret.count);
-             expect(ret.count).not.toEqual(1);
+             console.log('test id: ' + ret.testId);
              expect(ret.testId).toBe('18');
              expect(ret.records.length).toBe(100000);
         });
@@ -372,12 +354,11 @@ describe("Server spec 1", function(){
         });
         waitsFor(function() {
             return ret;
-        },  3200);
+        },  7000);
 
 		runs(function(){
              expect(ret.clientId).toBe('1');
-             console.log('request id: ' + ret.count);
-             expect(ret.count).not.toEqual(1);
+             console.log('test id: ' + ret.testId);
              expect(ret.testId).toBe('19');
              expect(ret.records.length).toBe(100000);
         });
@@ -392,12 +373,11 @@ describe("Server spec 1", function(){
         });
         waitsFor(function() {
             return ret;
-        },  3200);
+        },  8000);
 
 		runs(function(){
              expect(ret.clientId).toBe('1');
-             console.log('request id: ' + ret.count);
-             expect(ret.count).not.toEqual(1);
+             console.log('test id: ' + ret.testId);
              expect(ret.testId).toBe('20');
              expect(ret.records.length).toBe(100000);
         });

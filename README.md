@@ -5,6 +5,7 @@ nodejs web server process test
 
 The purpose of this repository is to test how nodejs server processes multiple requests at the same time.
 
+
 Setup:  Nodejs web server. Single get method that accepts 2 parameters test id and client id. It returns object with passed client id, passed test id, request id and array of generated 100, 000 objects. 
 
 Jasmine unit tests:
@@ -31,11 +32,11 @@ Each test expects response client Id to match client Id, response test id to mat
 To run server open terminal window navigate to project root folder.
 Use command nodemon server.js
 
-To run 1st spec runner open new terminal window, use command nodemon –delay 10 unitTest1/specRunner.js
+To run 1st spec runner open new terminal window, use command nodemon –delay 2 unitTest1/specRunner.js
 
-To run 2nd spec runner open new terminal window, use command nodemon –delay 10 unitTest2/specRunner.js
+To run 2nd spec runner open new terminal window, use command nodemon –delay 2 unitTest2/specRunner.js
 
-To run 3rd spec runner open new terminal window, use command nodemon –delay 10 unitTest3/specRunner.js
+To run 3rd spec runner open new terminal window, use command nodemon –delay 2 unitTest3/specRunner.js
 
 Nodemon will watch all js files in the directory and will restart process if any files change.
 
